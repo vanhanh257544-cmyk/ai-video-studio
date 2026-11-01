@@ -10,8 +10,12 @@ import tempfile
 import subprocess
 from typing import Optional, List, Dict, Any, Tuple
 from datetime import datetime, date
-import tkinter as tk
-from tkinter import filedialog
+try:
+    import tkinter as tk
+    from tkinter import filedialog
+except ImportError:
+    tk = None
+    filedialog = None
 import streamlit as st  # type: ignore
 
 from audio_processor import AudioProcessor  # type: ignore
