@@ -1,0 +1,8 @@
+streamlit
+moviepy==1.0.3
+opencv-python-headless
+numpy
+Pillow
+requests
+google-generativeai
+psutil
