@@ -1,7 +1,10 @@
 import os
 import re
 from typing import List, Dict, Any, Optional
-import whisper  # type: ignore
+try:
+    import whisper  # type: ignore
+except ImportError:
+    whisper = None
 from moviepy.editor import AudioFileClip, concatenate_audioclips  # type: ignore
 
 
