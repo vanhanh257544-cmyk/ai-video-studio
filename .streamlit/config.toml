@@ -1,0 +1,9 @@
+[server]
+maxUploadSize = 102400
+maxMessageSize = 10240
+enableXsrfProtection = false
+enableCORS = false
+enableWebsocketCompression = false
+
+[runner]
+fastReruns = true
